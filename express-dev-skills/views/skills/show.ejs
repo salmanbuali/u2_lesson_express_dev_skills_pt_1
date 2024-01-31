@@ -10,5 +10,8 @@
     <h3><%= skill.name %></h3>
     <h3>Description: <%= skill.desc%></h3>
     <h3>   <a href="/skills/<%= skill.id %>/edit"> Edit skill</a></h3>
+    <h3><form action="/skills/<%= skill.id %>?_method=DELETE" method="POST">
+      <button style="display: inline" type="submit">X</button>
+    </form></h3>
   </body>
 </html>
